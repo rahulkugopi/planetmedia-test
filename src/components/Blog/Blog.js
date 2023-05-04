@@ -1,11 +1,19 @@
 import React from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useNavigate } from 'react-router-dom';
 
 function Blog() {
+
+  const navigate = useNavigate();
+
+  const handleReadMore = () =>{
+    navigate("/blog-details/1");
+  }
+
   return (
     <div data-testid='blog'>
-      <div className='blog-banner bg-slate-300 flex items-center justify-center'>
-        <h2 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>Blog</h2>
+      <div className='blog-banner bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover' style={{ backgroundImage: "url(https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops.png)" }}>
+        <h2 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-white'>Blog</h2>
       </div>
 
       <div className='container mx-auto'>
@@ -26,7 +34,7 @@ function Blog() {
                 <span className='text-sm'>Aug 15, 2021 · 16 min read</span>
               </p>
             </div>
-            <button id="button" class="mt-8 bg-transparent text-blue duration-300">
+            <button id="button" class="mt-8 bg-transparent text-blue duration-300" onClick={handleReadMore}>
               Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
             </button>
           </div>
