@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .home-banner {
+      /* background-image: url('https://preview.colorlib.com/theme/readit/images/bg_1.jpg.webp'); */
+      background-size: cover;
+      height:100vh;
+      width: 100%;
+      position: relative;
+      top: 0;
+      z-index: -1;
+    }
+
+    .blog-banner{
+        width: 100%;
+        height: 200px;
+        background-color: theme('colors.light-orange');
+    }
+  }

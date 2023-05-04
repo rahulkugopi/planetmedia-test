@@ -1,13 +1,10 @@
 import React from 'react'
-import api from '../../constants/Api'
 
 function Home() {  
-
-
-
-
   return (
-    <div>Home</div>
+    <div data-testid='Home' className='home-banner bg-slate-400' >
+     
+    </div>
   )
 }
 
