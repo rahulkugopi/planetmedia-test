@@ -54,9 +54,9 @@ function Blog() {
                     </div>
 
                     <p className='ml-5'>
-                      <span className='text-md font-semibold leading-none tracking-tight dark:text-white'>Jese Leos</span>
+                      <span className='text-md font-semibold leading-none tracking-tight dark:text-white'>User {index}</span>
                       <br />
-                      <span className='text-sm'>Aug 15, 2021 · 16 min read</span>
+                      <span className='text-sm'>{new Date().getDate()}/{new Date().getMonth()+1}/{new Date().getFullYear()} · {index < 60 ? `${index+1} min` : `1 hours` }  read</span>
                     </p>
                   </div>
                   <button id="button" className="mt-8 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index)}>
