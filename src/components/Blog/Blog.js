@@ -24,8 +24,6 @@ function Blog() {
     navigate(`/blog-details/${evt}`);
   }
 
-  console.log(blogData)
-
   return (
     <div data-testid='blog'>
       <div className='blog-banner bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover' style={{ backgroundImage: "url(https://source.unsplash.com/random/?office&€7)" }}>
