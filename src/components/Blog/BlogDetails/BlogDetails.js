@@ -1,8 +1,8 @@
-import { Breadcrumbs, Typography } from '@mui/material';
+import { Breadcrumbs } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Link from '@mui/material/Link';
 import HomeIcon from '@mui/icons-material/Home';
-import { useParams } from 'react-router-dom';
 import api from '../../../constants/Api';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
@@ -21,8 +21,6 @@ function BlogDetails() {
         console.log(error);
       });
   }
-
-  console.log(blogData, 'blogData')
 
   return (
     <div data-testid='BlogDetails'>
@@ -48,8 +46,8 @@ function BlogDetails() {
         <div className='pt-10'>
           <p>{blogData.body}</p>
 
-          <div className="grid lg:grid-cols-2 gap-4 pt-10">
-            <div className='shadow pt-5 pb-5 pr-5 pl-5  flex justify-center'>
+          <div className="grid lg:grid-cols-1 gap-4 pt-10">
+            <div className='pt-5 pb-5 pr-5 pl-5 flex justify-center bg-dt-img'>
               <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover'  />
             </div>           
           </div>        
