@@ -43,10 +43,10 @@ function Blog() {
                     <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${index}`} className='object-cover' />
                   </div>
                   <h2 className='pt-5 text-1xl font-semibold leading-noneindex tracking-tight dark:text-white capitalize'>{res.title}</h2>
-                  <div className='blog-content'> 
+                  <div className='blog-content'>
                     <div className='blog-content-inner'>
-                    <p className='pt-2'>{res.body}</p>
-                    </div>                                      
+                      <p className='pt-2'>{res.body}</p>
+                    </div>
                   </div>
                   <div className='flex pt-5'>
                     <div className='w-12'>
