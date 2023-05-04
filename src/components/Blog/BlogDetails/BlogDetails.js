@@ -48,8 +48,8 @@ function BlogDetails() {
         <div className='pt-10'>
           <p>{blogData.body}</p>
 
-          <div className="grid lg:grid-cols-3 gap-4 pt-10">
-            <div className='shadow pt-5 pb-5 pr-5 pl-5'>
+          <div className="grid lg:grid-cols-2 gap-4 pt-10">
+            <div className='shadow pt-5 pb-5 pr-5 pl-5  flex justify-center'>
               <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover'  />
             </div>           
           </div>        

@@ -7,7 +7,6 @@ function Home() {
 
   const handleViewBlog = () => {
     navigate('/blog');
-    alert("|")
   }
 
   return (
@@ -15,6 +14,8 @@ function Home() {
       <div className='container mx-auto'>
         <h2 className='mb-4 text-4xl font-normal leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
         <button type='button' onClick={handleViewBlog} className='mt-4 bg-red-500 pt-3 pb-3 pl-10 pr-10 text-white cursor-pointer'>View Blog</button>
+
+
       </div>            
     </div>
   )
