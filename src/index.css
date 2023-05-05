@@ -15,14 +15,11 @@
     max-height: 100%;
   }
 
-  .home-banner {
-    /* background-image: url('https://preview.colorlib.com/theme/readit/images/bg_1.jpg.webp'); */
+  .home-banner {    
     background-size: cover;
     height: 100vh;
     width: 100%;
-    position: relative;
-    top: 0;
-    z-index: 1;
+    margin: -92px 0 0 0;    
   }
 
   .blog-banner {

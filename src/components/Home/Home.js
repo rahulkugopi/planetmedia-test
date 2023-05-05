@@ -11,10 +11,11 @@ function Home() {
 
   return (
     <div data-testid='Home'>
-      <div className='home-banner bg-slate-400 flex justify-center flex-row text-center items-center' style={{ backgroundImage: "url(https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops.png)" }}>
-        <div className='container mx-auto'>
-          <h2 className='mb-4 text-4xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-          <button type='button' onClick={handleViewBlog} className='mt-4 bg-red-500 pt-3 pb-3 pl-10 pr-10 text-white cursor-pointer'>View Blog</button>
+      <div className='home-banner bg-slate-400 flex justify-center flex-row text-center items-center bg-no-repeat' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1610703122258-5a08b3166416?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDE5fHx8fHx8MTY4MzI4NzU4MA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
+        <div className='container mx-auto ml-10 mr-10 bg-black/[.1] p-12 rounded-lg mt-20 lg:mt-0'>
+          <h2 className='mb-4 text-4xl font-sans font-bold text-gray-900 md:text-3xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+          <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button type='button'  onClick={handleViewBlog} className='mt-5 bg-red-700 text-white pt-4 pb-4 pl-10 pr-10 rounded-full hover:bg-red-900 w-full sm:w-48'>View Blog</button>
         </div>
       </div>
 

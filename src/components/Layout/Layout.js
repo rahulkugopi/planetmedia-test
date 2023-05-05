@@ -8,7 +8,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <div data-testid='Layout' className='absolute w-full top-0'>      
+      <div data-testid='Layout'>      
           <Outlet />
         </div>    
       <Footer />
