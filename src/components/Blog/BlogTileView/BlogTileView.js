@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import api from '../../../constants/Api';
 
 function BlogTileView(props) {
@@ -44,7 +45,8 @@ function BlogTileView(props) {
               <div className='pt-5 pb-5 pl-5 pr-5'>
                 <div className='w-full mb-5 flex items-center'>
                   <AccountCircleIcon />
-                  <span className='text-sm text-slate-900 pl-2 font-semibold'>{new Date().getDate()} / {new Date().getMonth() + 1} / {new Date().getFullYear()} · {index < 60 ? `${index + 1} min` : `1 hours`}   read</span>
+                  <span className='pl-2 uppercase text-sm font-semibold'>user {index+1}</span>
+                  <span className='text-sm text-slate-900 pl-2 font-semibold ml-auto flex justify-center'><CalendarMonthIcon style={{ fontSize: 20 }} className='mr-1'/> {new Date().getDate()} / {new Date().getMonth() + 1} / {new Date().getFullYear()} · {index < 60 ? `${index + 1} min` : `1 hours`}   read</span>
                 </div>
 
                 <div className='w-full mb-5'>
@@ -64,7 +66,7 @@ function BlogTileView(props) {
                   </div>
                 </div>
 
-                <button id="button" className="mt-5 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index+1)}>
+                <button id="button" className="mt-5 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index + 1)}>
                   Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
                 </button>
               </div>
