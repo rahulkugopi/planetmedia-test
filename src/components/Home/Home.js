@@ -32,9 +32,7 @@ function Home() {
 
       <div className='container mx-auto pt-10'>
         <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl text-black uppercase'>Latest Blogs</h2>
-
         <BlogTileView page='home' />        
-
       </div>
     </div >
   )

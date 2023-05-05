@@ -64,7 +64,7 @@ function BlogTileView(props) {
                   </div>
                 </div>
 
-                <button id="button" className="mt-5 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index)}>
+                <button id="button" className="mt-5 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index+1)}>
                   Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
                 </button>
               </div>

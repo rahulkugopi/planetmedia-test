@@ -5,6 +5,7 @@ import Link from '@mui/material/Link';
 import HomeIcon from '@mui/icons-material/Home';
 import api from '../../../constants/Api';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 function BlogDetails() {
 
@@ -24,7 +25,7 @@ function BlogDetails() {
 
   return (
     <div data-testid='BlogDetails'>
-      <div className='blog-banner flex-col bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover' style={{ backgroundImage: "url(https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops.png)" }}>
+      <div className='blog-banner flex-col bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDc2fHx8fHx8MTY4MzMwMTEwMA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
         <div className='w-12 mb-5'>
           <AccountCircleIcon style={{ fontSize: '55px', color:'#fff' }} />
         </div>
@@ -33,6 +34,16 @@ function BlogDetails() {
           <span className='text-lg pl-2'>{new Date().getDate()}/{new Date().getMonth()+1}/{new Date().getFullYear()} · {id < 60 ? `${id+1} min` : `1 hours` } min read</span>
         </p>
         <h2 className='mb-4 font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl text-white'>{blogData.title}</h2>
+      </div>
+
+      <div className='bg-red-400'>
+        <div className='container mx-auto pt-3 pb-4 pl-10 pr-10 box-border'>
+          <span>
+            <Link underline="hover" to="/" className='text-red-900'> <HomeIcon sx={{ mr: 0.3 }} style={{ fontSize: 20 }} className='text-red-900' /> <span className='text-xs text-red-900 uppercase font-bold'>Home</span></Link>
+          </span>
+          <span className='text-red-900 pl-2 pr-2'><KeyboardArrowRightIcon style={{ fontSize: 20 }} /></span>
+          <span className='text-xs text-white font-bold uppercase'>Blog</span>          
+        </div>
       </div>
 
       <div className='container mx-auto pt-5'>
