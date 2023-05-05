@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import BlogTileView from '../Blog/BlogTileView/BlogTileView';
 
 
 function Home() {
@@ -31,38 +31,9 @@ function Home() {
       </div>
 
       <div className='container mx-auto pt-10'>
-        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest News</h2>
+        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest Blogs</h2>
 
-        <div className="grid lg:grid-cols-3 gap-4 pt-10 pl-10 pr-10">
-          <div className='shadow rounded-2xl '>
-            <div className='blog-top-img flex align-middle justify-center'>
-              <img src={`${process.env.REACT_APP_IMG_URL}/?office&€2`} className='object-cover w-full rounded-t-lg' />
-            </div>
-
-            <div className='pt-5 pb-5 pl-5 pr-5'>
-              <div className='w-full mb-5'>
-                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>News</span>
-                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>Fashion</span>
-                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>Life Style</span>
-              </div>
-
-
-              <div className='blog-header'>
-                <h2 className='text-2xl font-semibold leading-noneindex tracking-tight text-black capitalize'>Test Header</h2>
-              </div>
-
-              <div className='blog-content'>
-                <div className='blog-content-inner'>
-                  <p className='pt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div>
-
-              <button id="button" className="mt-5 bg-transparent text-blue duration-300" >
-                Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
-              </button>
-            </div>
-          </div>
-        </div>
+        <BlogTileView page='home' />        
 
       </div>
     </div >

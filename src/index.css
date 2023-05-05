@@ -54,6 +54,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    min-height: 90px;
   }
 
   .blog-content-inner{
