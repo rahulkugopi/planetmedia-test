@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div data-testid='header' className='relative z-10'>
-      <nav className="flex items-center justify-between flex-wrap bg-black/[.85] lg:bg-black/[.60] p-5 lg:pl-10 lg:pr-10">
+      <nav className="flex items-center justify-between flex-wrap bg-black lg:bg-black/[.60] p-5 lg:pl-10 lg:pr-10">
         <div className="flex items-center flex-shrink-0 mr-6">
           <Link to='/'><span className="font-medium text-4xl tracking-tight text-white">Test <span className='text-red-700 font-extrabold'>Site</span></span></Link>
         </div>
