@@ -1,5 +1,7 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 
 function Home() {
 
@@ -15,31 +17,55 @@ function Home() {
         <div className='container mx-auto ml-10 mr-10 bg-black/[.1] p-12 rounded-lg mt-20 lg:mt-0'>
           <h2 className='mb-4 text-4xl font-sans font-bold text-gray-900 md:text-3xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
           <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button type='button'  onClick={handleViewBlog} className='mt-5 bg-red-700 text-white pt-4 pb-4 pl-10 pr-10 rounded-full hover:bg-red-900 w-full sm:w-48'>View Blog</button>
+          <button type='button' onClick={handleViewBlog} className='mt-5 bg-red-700 text-white pt-4 pb-4 pl-10 pr-10 font-semibold rounded-full text-lg hover:bg-red-900 w-full sm:w-48'>View Blog</button>
         </div>
       </div>
 
-      <div className='container mx-auto'>
-
-      <div className="grid lg:grid-cols-1 gap-4 pt-10">
-        <h2 className='mb-4 text-4xl font-normal text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>About Me</h2>
-      </div>
-
-        <div className="grid lg:grid-cols-2 gap-4 pt-10">
-          <div className='main-about'>
-            <img src={`${process.env.REACT_APP_IMG_URL}/?office&€2`} className='object-cover' />
-          </div>
-
-          <div className='pt-5'>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-
-            <p className='mt-5'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-
-            <p className='mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div className='bg-red-500 pt-16 pb-16'>
+        <div className='container mx-auto'>
+          <div className="w-full pl-10 pr-10 box-border text-center lg:text-left">
+            <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-white'>About Me</h2>
+            <p className='text-white'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
           </div>
         </div>
       </div>
-    </div>
+
+      <div className='container mx-auto pt-10'>
+        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest News</h2>
+
+        <div className="grid lg:grid-cols-3 gap-4 pt-10 pl-10 pr-10">
+          <div className='shadow rounded-2xl '>
+            <div className='blog-top-img flex align-middle justify-center'>
+              <img src={`${process.env.REACT_APP_IMG_URL}/?office&€2`} className='object-cover w-full rounded-t-lg' />
+            </div>
+
+            <div className='pt-5 pb-5 pl-5 pr-5'>
+              <div className='w-full mb-5'>
+                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>News</span>
+                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>Fashion</span>
+                <span className='bg-slate-400 pt-1 pb-1 pl-3 pr-3 rounded-sm mr-1'>Life Style</span>
+              </div>
+
+
+              <div className='blog-header'>
+                <h2 className='text-2xl font-semibold leading-noneindex tracking-tight text-black capitalize'>Test Header</h2>
+              </div>
+
+              <div className='blog-content'>
+                <div className='blog-content-inner'>
+                  <p className='pt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+
+              <button id="button" className="mt-5 bg-transparent text-blue duration-300" >
+                Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div >
   )
 }
 
