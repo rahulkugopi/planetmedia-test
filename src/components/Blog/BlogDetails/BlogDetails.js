@@ -23,7 +23,7 @@ function BlogDetails() {
 
   return (
     <div data-testid='BlogDetails'>
-      <div className='blog-banner flex-col bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover pl-10 pr-10 box-border text-center' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDc2fHx8fHx8MTY4MzMwMTEwMA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
+      <div className='blog-banner flex-col bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover pl-10 pr-10 box-border text-center mt-0 lg:-mt-24' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDc2fHx8fHx8MTY4MzMwMTEwMA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
         <div className='w-12 mb-5'>
           <AccountCircleIcon style={{ fontSize: '55px', color: '#fff' }} />
         </div>
