@@ -15,7 +15,13 @@ function BlogTileView(props) {
 
   const featchData = () => {
     api.get('posts').then(res => {
-      setBlogData(res.data);
+      if (props.page == 'home') {
+        setBlogData(res.data.slice(0, 3));
+      }
+      else {
+        setBlogData(res.data);
+      }
+
     }).catch(error => {
       console.log(error);
     });
