@@ -27,11 +27,11 @@ function BlogDetails() {
         <div className='w-12 mb-5'>
           <AccountCircleIcon style={{ fontSize: '55px', color: '#fff' }} />
         </div>
-        <p className='ml-5 text-white'>
+        <p className='ml-5 text-white mb-5 lg:mb-0'>
           <span className='text-lg font-semibold leading-none tracking-tight'>User {id}</span>
           <span className='text-lg pl-2'>{new Date().getDate()}/{new Date().getMonth() + 1}/{new Date().getFullYear()} · {id < 60 ? `${id + 1} min` : `1 hours`} min read</span>
         </p>
-        <h2 className='mb-4 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+        <h2 className='mb-4 font-extrabold leading-none tracking-tight text-gray-900 text-2xl md:text-4xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
       </div>
 
       <div className='bg-red-400'>

@@ -9,8 +9,8 @@ function Blog() {
 
   return (
     <div data-testid='blog'>
-      <div className='blog-banner bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover text-center pb-3 pl-10 pr-10 box-border' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1523289333742-be1143f6b766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDd8fHx8fHwxNjgzMjk3OTA1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
-        <h2 className='mb-4 text-4xl font-sans font-bold text-gray-900 md:text-3xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+      <div className='blog-banner bg-slate-300 flex items-center justify-center bg-no-repeat bg-cover text-center pb-3 pl-10 pr-10 box-border mt-0 lg:-mt-24' style={{ backgroundImage: "url(https://images.unsplash.com/photo-1523289333742-be1143f6b766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8b2ZmaWNlLOKCrDd8fHx8fHwxNjgzMjk3OTA1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)" }}>
+        <h2 className='mb-4 text-3xl font-sans font-bold text-gray-900 md:text-4xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
       </div>
 
       <div className='bg-red-400'>
