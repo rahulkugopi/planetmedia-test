@@ -14,7 +14,7 @@ function BlogTileView(props) {
   }, []);
 
   const featchData = () => {
-    api.get('posts').then(res => {
+    api.get('posts').then(res => {      
       if (props.page == 'home') {
         setBlogData(res.data.slice(0, 3));
       }
@@ -33,7 +33,7 @@ function BlogTileView(props) {
 
   return (
     <div data-testid='BlogTileView'>
-      <div className="grid lg:grid-cols-3 gap-4 pt-10 pl-10 pr-10">
+      <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
         {
           blogData.map((res, index) => (
             <div className='shadow rounded-2xl' key={index}>

@@ -1,28 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import api from '../../constants/Api';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import React from 'react';
+import BlogTileView from './BlogTileView/BlogTileView';
 
 function Blog() {
-
-  const navigate = useNavigate();
-  const [blogData, setBlogData] = useState([]);
-
-  useEffect(() => {
-    featchData();
-  }, []);
-
-  const featchData = () => {
-    api.get('posts').then((res) => setBlogData(res.data))
-      .catch(error => {
-        console.log(error);
-      });
-  }
-
-  const handleReadMore = (evt) => {
-    navigate(`/blog-details/${evt}`);
-  }
 
   return (
     <div data-testid='blog'>
@@ -30,42 +9,9 @@ function Blog() {
         <h2 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-white'>Blog</h2>
       </div>
 
-      <div className='container mx-auto'>
-        <div className="grid lg:grid-cols-3 gap-4 pt-10">
-
-          {
-            blogData.map((res, index) => (
-              <>
-                <div className='shadow pt-5 pb-5 pr-5 pl-5'>
-                  <div className='blog-top-img flex align-middle justify-center'>
-                    <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${index}`} className='object-cover' />
-                  </div>
-                  <h2 className='pt-5 text-1xl font-semibold leading-noneindex tracking-tight dark:text-white capitalize'>{res.title}</h2>
-                  <div className='blog-content'>
-                    <div className='blog-content-inner'>
-                      <p className='pt-2'>{res.body}</p>
-                    </div>
-                  </div>
-                  <div className='flex pt-5'>
-                    <div className='w-12'>
-                      <AccountCircleIcon style={{ fontSize: '45px' }} />
-                    </div>
-
-                    <p className='ml-5'>
-                      <span className='text-md font-semibold leading-none tracking-tight dark:text-white'>User {index}</span>
-                      <br />
-                      <span className='text-sm'>{new Date().getDate()}/{new Date().getMonth()+1}/{new Date().getFullYear()} · {index < 60 ? `${index+1} min` : `1 hours` }  read</span>
-                    </p>
-                  </div>
-                  <button id="button" className="mt-8 bg-transparent text-blue duration-300" onClick={e => handleReadMore(index)}>
-                    Read more <ArrowForwardIcon style={{ fontSize: '16px' }} />
-                  </button>
-                </div>
-              </>
-            ))
-          }
-
-        </div>
+      <div className='container mx-auto pt-10'>
+        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest Blogs</h2>
+        <BlogTileView page='blogs' />        
       </div>
     </div>
   )
