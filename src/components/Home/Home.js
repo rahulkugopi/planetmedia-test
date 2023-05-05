@@ -24,14 +24,14 @@ function Home() {
       <div className='bg-red-500 pt-16 pb-16'>
         <div className='container mx-auto'>
           <div className="w-full pl-10 pr-10 box-border text-center lg:text-left">
-            <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-white'>About Me</h2>
+            <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl text-white uppercase'>About Me</h2>
             <p className='text-white'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
           </div>
         </div>
       </div>
 
       <div className='container mx-auto pt-10'>
-        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest Blogs</h2>
+        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl text-black uppercase'>Latest Blogs</h2>
 
         <BlogTileView page='home' />        
 

@@ -14,7 +14,7 @@ function BlogTileView(props) {
   }, []);
 
   const featchData = () => {
-    api.get('posts').then(res => {      
+    api.get('posts').then(res => {
       if (props.page == 'home') {
         setBlogData(res.data.slice(0, 3));
       }
@@ -44,7 +44,7 @@ function BlogTileView(props) {
               <div className='pt-5 pb-5 pl-5 pr-5'>
                 <div className='w-full mb-5 flex items-center'>
                   <AccountCircleIcon />
-                  <span className='text-sm text-slate-900 pl-2 font-semibold'>{new Date().getDate()} / {new Date().getMonth() + 1} / {new Date().getFullYear()} · 1 hours  read</span>
+                  <span className='text-sm text-slate-900 pl-2 font-semibold'>{new Date().getDate()} / {new Date().getMonth() + 1} / {new Date().getFullYear()} · {index < 60 ? `${index + 1} min` : `1 hours`}   read</span>
                 </div>
 
                 <div className='w-full mb-5'>

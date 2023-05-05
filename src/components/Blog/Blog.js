@@ -13,18 +13,18 @@ function Blog() {
         <h2 className='mb-4 text-4xl font-sans font-bold text-gray-900 md:text-3xl lg:text-5xl text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
       </div>
 
-      <div className='bg-red-700'>
+      <div className='bg-red-400'>
         <div className='container mx-auto pt-3 pb-4 pl-10 pr-10 box-border'>
           <span>
-            <Link underline="hover" to="/" className='text-red-900'> <HomeIcon sx={{ mr: 0.3 }} style={{ fontSize: 20 }}  /> <span className='text-xs text-white uppercase font-bold'>Home</span></Link>
+            <Link underline="hover" to="/" className='text-red-900'> <HomeIcon sx={{ mr: 0.3 }} style={{ fontSize: 20 }}  /> <span className='text-xs text-red-900 uppercase font-bold'>Home</span></Link>
           </span>
           <span className='text-red-900 pl-2 pr-2'><KeyboardArrowRightIcon style={{ fontSize: 20 }} /></span>
-          <span className='text-xs text-red-900 font-bold uppercase'>Blog</span>          
+          <span className='text-xs text-white font-bold uppercase'>Blog</span>          
         </div>
       </div>
 
       <div className='container mx-auto pt-10'>
-        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl text-black'>Latest Blogs</h2>
+        <h2 className='mb-4 text-2xl font-semibold text-center leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl text-black uppercase'>Latest Blogs</h2>
         <BlogTileView page='blogs' />
       </div>
     </div>
