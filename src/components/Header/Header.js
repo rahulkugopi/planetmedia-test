@@ -57,7 +57,7 @@ function Header() {
           </div>
 
           <div className="block mt-4 lg:mt-0">
-            <button type='button' className='bg-red-700 text-white pt-3 pb-3 pl-8 pr-8 rounded-full font-semibold text-lg hover:bg-red-900 w-full sm:w-48'>Sign In <LoginIcon /></button>
+            <button type='button' className='bg-red-700 text-white pt-2 pb-2 pl-8 pr-8 rounded-full font-semibold text-1xl hover:bg-red-900 w-full sm:w-48'>Sign In <LoginIcon /></button>
           </div>
 
         </div>
